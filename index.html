@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Zpin Tech</title>
+</head>
+<body>
+    <main>
+        <header>
+            <div class="contenedor-header contenedor-logo">
+                <img src="./img/logo.png" alt="logo zpin tech"/>
+                <h1>Zpin Tech</h1>
+            </div>
+            <div class="menu">
+                <ul>
+                    <li>Inicio</li>
+                    <li>Misión</li>
+                    <li>Visión</li>
+                    <li>Servicios</li>
+                    <li id="contacto">Contacto</li>
+                </ul>
+            </div>
+            <div id="icon-menu" onclick="displayMenu(true)">
+                <img id="icono-menu-hamburguesa" src="./img/menu.png" alt="menu"/>
+            </div>
+        </header>
+        <div class="menu-hamburguesa">
+            <img id="cerrar-menu" src="./img/closeWhite.png" alt="cerrar menu" onclick="displayMenu(false)"/>
+            <ul>
+                <li>Inicio</li>
+                <li>Misión</li>
+                <li>Visión</li>
+                <li>Servicios</li>
+                <li>Contacto</li>
+            </ul>
+        </div>
+        <section id="seccion-inicio">
+            <div class="contenedor-inicio-izquierda">
+                <h2>¿Quiénes <br> somos?</h2>
+                <p>Nuestro equipo multidisciplinario integra una combinación de profesionales con una gran experiencia en el sector público y privado de diversas industrias, así como por talento joven que se distingue por su pasión en aprender.</p>
+            </div>
+            <div class="contenedor-inicio-derecho">
+                <img src="./img/tecnologia.png" alt="Imagen de tecnologia"/>
+            </div>
+        </section>
+    </main>
+    <script src="./index.js"></script>
+</body>
+</html>

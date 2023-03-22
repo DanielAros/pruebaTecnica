@@ -1,0 +1,213 @@
+:root{
+    --color-primario: #fff;
+    --color-secundario: #00235A;
+}
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+}
+
+body{
+    padding: 0;
+    margin: 0;
+}
+
+
+/* HEADER */
+header{
+    width: 100vw;
+    display: flex;
+    justify-content: space-between;
+    padding: 16px 40px;
+    border-bottom: 1px solid gray;
+    flex-wrap: wrap;
+    position: fixed;
+}
+
+    header .contenedor-header{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    h1{
+        color: var(--color-secundario);
+    }
+
+    h2{
+        color: var(--color-secundario);
+        font-size: 4rem;
+    }
+
+    .contenedor-logo>img{
+        width: 50px;
+        height: 50px;
+        margin-right: 20px;
+    }
+
+    .menu{
+        display: initial;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .menu>ul{
+        width: 100%;
+        list-style: none;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    
+    .menu>ul>li{
+        width: 90px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 0px 10px;
+        color: var(--color-secundario);
+    }
+    #contacto{
+        background: var(--color-secundario);
+        width: 120px;
+        height: 40px;
+        color: var(--color-primario);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 10px;
+        text-decoration: none;
+    }
+
+    #contacto:hover{
+        background-color: rgb(2, 24, 58);
+    }
+
+    .menu>ul>li:hover{
+        cursor: pointer;
+        text-decoration: underline;
+    }
+
+    #icono-menu-hamburguesa{
+        width: 40px;
+        height: 40px;
+        display: none;
+    }
+
+    .menu-hamburguesa{
+        display: none;
+        width: 98vw;
+        height: 105vh;
+        background-color: #00235A;
+        position: absolute;
+    }
+
+    .menu-hamburguesa>ul{
+        width: 100%;
+        height: calc(100vh - 60px);
+        list-style: none;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        color: white;
+        margin: 0px;
+        padding: 0px 0px 50px 0px;
+        /* padding-bottom: 0 0 40px 0; */
+    }
+    .menu-hamburguesa>ul>li{
+        margin: 40px 0px;
+        font-size: 2.4rem;
+    }
+    .menu-hamburguesa>ul>li:hover{
+        cursor: pointer;
+        text-decoration: underline;
+    }
+
+    #icon-menu{
+        display: none;
+        align-items: center;
+    }
+
+    #icon-menu:hover{
+        cursor: pointer;
+    }
+/* ------------ */
+
+/* Seccion de inicio */
+#seccion-inicio{
+    width: 100vw;
+    height: 100vh;
+    padding: 100px 40px 0px 40px;
+    /* background-color: #00235A; */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+    .contenedor-inicio-izquierda{
+        max-width: 600px;
+    }
+    .contenedor-inicio-izquierda>p{
+        margin-top: 30px;
+        font-size: 1.4rem;
+    }
+    .contenedor-inicio-derecho{
+        max-width: 800px;
+    }
+        .contenedor-inicio-derecho>img{
+            width: 500px;
+            height: 500px;
+        }
+
+
+
+
+
+@media only screen and (max-width : 920px) {
+    h2{
+        font-size: 2.5rem;
+    }
+    header{
+        padding: 16px 10px;
+    }
+    .menu{
+        display: none;
+    }
+    #icono-menu-hamburguesa{
+        display: initial;
+    }
+    #cerrar-menu{
+        width: 30px;
+        height: 30px;
+        display: flex;
+        position: relative;
+        float: right;
+        margin: 30px;
+    }
+    #cerrar-menu:hover{
+        cursor: pointer;
+    }
+    #icon-menu{
+        display: flex;
+    }
+
+    #seccion-inicio{
+        width: 100%;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: flex-end;
+        flex-direction: column-reverse;
+        padding: 100px 10px 0px 10px;
+    }
+    .contenedor-inicio-izquierda>p{
+        /* margin-top: 30px; */
+        font-size: 1rem;
+    }
+    .contenedor-inicio-derecho>img{
+        width: 250px;
+        height: 250px;
+    }
+}
+
