@@ -6,5 +6,23 @@ const displayMenu = (mostrarMenu) => {
     }else{
         menu[0].style.display = 'none';
     }
-    console.log(menu)
+
+    const section = document.getElementsByTagName('section');
+
+    for(let i = 1; i < section.length; i++){
+        section[i].style.display = 'none';
+        console.log(section[i])
+    }
+}
+
+const navegacionSecciones = () => {
+    const section = document.getElementsByTagName('section');
+
+    for(let i = 1; i < section.length; i++){
+        section[i].style.display = 'flex';
+        console.log(section[i])
+    }
+
+    const menu = document.getElementsByClassName('menu-hamburguesa');
+    menu[0].style.display = 'none';
 }

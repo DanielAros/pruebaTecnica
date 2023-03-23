@@ -15,7 +15,7 @@ body{
 
 a:link, a:visited, a:active {
     text-decoration:none;
-    color: var(--color-secundario);
+    /* color: var(--color-secundario); */
 }
 
 /* HEADER */
@@ -130,6 +130,7 @@ header{
         margin: 40px 0px;
         font-size: 2.4rem;
     }
+    
     .menu-hamburguesa>ul>li:hover{
         cursor: pointer;
         text-decoration: underline;
