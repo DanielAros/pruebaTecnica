@@ -20,7 +20,7 @@
                     <li><a href="#seccion-mision-vision">Misión</a></li>
                     <li><a href="#seccion-mision-vision">Visión</a></li>
                     <li><a href="#seccion-servicios">Servicios</a></li>
-                    <li id="contacto">Contacto</li>
+                    <li id="contacto"><a href="#seccion-contacto">Contacto</a></li>
                 </ul>
             </div>
             <div id="icon-menu" onclick="displayMenu(true)">
@@ -53,7 +53,19 @@
                     <p class="letra-blanca">Diseñar e implementar servicios y herramientas tecnológicas que ayuden a nuestros clientes a cumplir su propósito.</p>
                 </div>
                 <div class="container-imagenes-mision-vision">
-                    <!-- <p>Hola</p> -->
+                    <div class="top-imagenes">
+                        <div class="imagen1">
+                            <img src="./img/image1.png" alt="imagen1">
+                        </div>
+                        <div class="imagen2">
+                            <img src="./img/image2.png" alt="imagen2">
+                        </div>
+                    </div>
+                    <div class="buttom-imagenes">
+                        <div class="imagen3">
+                            <img src="./img/image3.png" alt="imagen3">
+                        </div>
+                    </div>
                 </div>
             </div>
             <hr>
@@ -63,7 +75,19 @@
                     <p class="letra-blanca">Ser la empresa de referencia que implementa métodos y herramientas innovadoras y disruptivas.</p>
                 </div>
                 <div class="container-imagenes-mision-vision">
-
+                    <div class="top-imagenes">
+                        <div class="imagen1">
+                            <img src="./img/image1.png" alt="imagen1">
+                        </div>
+                        <div class="imagen2">
+                            <img src="./img/image2.png" alt="imagen2">
+                        </div>
+                    </div>
+                    <div class="buttom-imagenes">
+                        <div class="imagen3">
+                            <img src="./img/image3.png" alt="imagen3">
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
@@ -110,8 +134,36 @@
         <section id="seccion-contacto">
             <h2 class="letra-blanca">Contacto</h2>
             <p class="letra-blanca">Si estas interesado en alguno de estos servicios puedes contactarnos en el siguiente formulario:</p>
+            <form id="form-contacto">
+                <fieldset>
+                    <div class="contenedor-inputs">
+                        <label for="nombre_completo">Nombre completo:</label>
+                        <input type="text" id="nombre_completo" name="nombre_completo"/>
+                    </div>
+                    <div class="contenedor-inputs">
+                        <label for="correo">Correo electrónico:</label>
+                        <input type="email" id="correo" name="correo"/>
+                    </div>
+                </fieldset>
+                <fieldset>
+                    <div class="contenedor-inputs mensaje">
+                        <label for="mensaje">Mensaje:</label>
+                        <textarea id="mensaje" name="mensaje"></textarea>
+                    </div>
+                </fieldset>
+                <input type="submit" value="Enviar" id="enviar">
+            </form>
+            <p class="letra-blanca">contacto@zpin.tech</p>
+            <footer>
+                <div>
+                    <p>© 2022 ZPIN. Todos los derechos reservados.</p>
+                </div>
+                <div id="terminos">
+                    <p><a href="#">Aviso de Privacidad</a></p>
+                    <p><a href="#">Términos de servicio</a></p>
+                </div>
+            </footer>
         </section>
-        
     </main>
     <script src="./index.js"></script>
 </body>

@@ -13,6 +13,10 @@ body{
     margin: 0;
 }
 
+a:link, a:visited, a:active {
+    text-decoration:none;
+    color: var(--color-secundario);
+}
 
 /* HEADER */
 header{
@@ -20,7 +24,6 @@ header{
     display: flex;
     justify-content: space-between;
     padding: 16px 40px;
-    /* border-bottom: 1px solid gray; */
     flex-wrap: wrap;
     position: fixed;
     background-color: #fff;
@@ -84,6 +87,9 @@ header{
         border-radius: 10px;
         text-decoration: none;
     }
+    #contacto>a{
+        color: var(--color-primario);
+    }
 
     #contacto:hover{
         background-color: rgb(2, 24, 58);
@@ -119,7 +125,6 @@ header{
         color: white;
         margin: 0px;
         padding: 0px 0px 50px 0px;
-        /* padding-bottom: 0 0 40px 0; */
     }
     .menu-hamburguesa>ul>li{
         margin: 40px 0px;
@@ -145,7 +150,6 @@ header{
     width: 100%;
     height: 100vh;
     padding: 100px 40px 0px 40px;
-    /* background-color: #00235A; */
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -169,7 +173,6 @@ header{
 #seccion-mision-vision{
     width: 100%;
     height: 100vh;
-    /* min-height: 100vh; */
     background-color: var(--color-secundario);
     padding: 100px 40px 0px 40px;
     display: flex;
@@ -182,7 +185,6 @@ header{
         height: 240px;
         display: flex;
         justify-content: space-between;
-        /* background-color: yellow; */
         padding: 10px;
     }
         .container-info-mision-vision{
@@ -199,8 +201,30 @@ header{
             width: 100%;
             max-width: 400px;
             height: 100%;
-            /* background-color: red; */
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
         }
+            .top-imagenes{
+                display: flex;
+                justify-content: space-between;
+            }
+            .imagen1{
+                width: 49%;
+                height: 110px;
+            }
+            .imagen1>img, .imagen2>img, .imagen3>img{
+                width: 100%;
+                height: 100%;
+            }
+            .imagen2{
+                width: 49%;
+                height: 110px;
+            }
+            .imagen3{
+                width: 100%;
+                height: 100px;
+            }
 
 /* Servicios */
 #seccion-servicios{
@@ -208,6 +232,12 @@ header{
     flex-direction: column;
     align-items: center;
     padding: 100px 40px 100px 40px;
+}
+
+#seccion-servicios>p{
+    margin: 20px 0px;
+    font-size: 1.5rem;
+    text-align: center;
 }
     .contenedor-servicios{
         width: 100%;
@@ -223,6 +253,11 @@ header{
         }
         .contenedor-info-servicios>h3{
             margin-bottom: 20px;
+            font-size: 1.5rem;
+        }
+        .contenedor-info-servicios>p{
+            margin-bottom: 20px;
+            font-size: 1.2rem;
         }
         .contenedor-imagen-servicios>img{
             width: 180px;
@@ -234,11 +269,76 @@ header{
     width: 100%;
     height: 100vh;
     background-color: var(--color-secundario);
-    padding: 100px 40px 100px 40px;
+    padding: 100px 40px 0px 40px;
     display: flex;
     flex-direction: column;
     align-items: center;
 }
+    #form-contacto{
+        width: 100%;
+        max-width: 740px;
+        background-color: white;
+        padding: 40px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        border-radius: 10px;
+        margin: 30px 0px 30px 0px;
+    }
+    #form-contacto>fieldset{
+        width: 100%;
+        border: none;
+        display: flex;
+        justify-content: space-between;
+    }
+    .contenedor-inputs{
+        width: 300px;
+        display: flex;
+        flex-direction: column;
+    }
+        .contenedor-inputs>input{
+            padding: 5px;
+            margin: 10px 0px 5px 0px;
+        }
+        #enviar{
+            width: 100%;
+            max-width: 200px;
+            background-color: #00235A;
+            color: white;
+            margin-top: 30px;
+            border: none;
+            padding: 10px;
+            border-radius: 10px;
+        }
+            #enviar:hover{
+                background-color: #042f74;
+                cursor: pointer;
+            }
+        
+        .mensaje{
+            width: 100%;
+        }
+        .contenedor-inputs>textarea{
+            width: 100%;
+            height: 80px;
+            padding: 5px;
+            margin: 10px 0px 5px 0px;
+        }
+footer{
+    width: 100%;
+    height: 80px;
+    background-color: rgba(255, 255, 255, .10);
+    padding: 10px 30px;
+    color: var(--color-primario);
+    position: absolute;
+    margin-top: calc(100vh - 180px);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+    #terminos>p>a{
+        color: var(--color-primario);
+    }
 
 @media only screen and (max-width : 920px) {
     h2{
@@ -277,7 +377,6 @@ header{
         padding: 100px 10px 0px 10px;
     }
     .contenedor-inicio-izquierda>p{
-        /* margin-top: 30px; */
         font-size: 1rem;
     }
     .contenedor-inicio-derecho>img{
@@ -304,10 +403,31 @@ header{
         }
         .container-imagenes-mision-vision{
             width: 100%;
-            /* max-width: 400px; */
             height: 400px;
         }
 
+        .imagen1{
+            width: 49%;
+            height: 65px;
+            background-color: green;
+        }
+        .imagen2{
+            width: 49%;
+            height: 65px;
+            background-color: green;
+        }
+        .imagen3{
+            width: 100%;
+            height: 80px;
+            background-color: aqua;
+        }
+
+    #seccion-servicios{
+        padding: 100px 10px 100px 10px;
+    }
+    #seccion-servicios>h2, #seccion-servicios>p{
+        text-align: center;
+    }
         .contenedor-servicios{
             flex-direction: column;
             align-items: center;
@@ -316,6 +436,28 @@ header{
             .contenedor-imagen-servicios>img{
                 margin-top: 30px;
             }
+    #seccion-contacto{
+        padding: 100px 10px 100px 10px;
+    }
+        #form-contacto{
+            padding: 5px;
+        }
+        #form-contacto>fieldset{
+            width: 100%;
+            flex-wrap: wrap;
+        }
+        .contenedor-inputs{
+            width: 100%;
+        }
+        #enviar{
+            margin-top: 4px;
+            margin-bottom: 10px;
+        }
+    footer{
+        height: 40px;
+        margin-top: calc(100vh - 140px);
+        font-size: 0.5rem;
+    }
 }
 
 ::-webkit-scrollbar{
