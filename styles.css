@@ -16,6 +16,7 @@ body{
 a:link, a:visited, a:active {
     text-decoration:none;
     /* color: var(--color-secundario); */
+    /* color: var(--color-secundario); */
 }
 
 /* HEADER */
@@ -76,6 +77,9 @@ header{
         margin: 0px 10px;
         color: var(--color-secundario);
     }
+    .menu>ul>li>a:link, .menu>ul>li>a:visited, .menu>ul>li>a:active{
+        color: var(--color-secundario);
+    }
     #contacto{
         background: var(--color-secundario);
         width: 120px;
@@ -130,6 +134,12 @@ header{
         margin: 40px 0px;
         font-size: 2.4rem;
     }
+
+    .menu-hamburguesa>ul>li>a:link, .menu-hamburguesa>ul>li>a:visited, .menu-hamburguesa>ul>li>a:active{
+        margin: 40px 0px;
+        font-size: 2.4rem;
+        color: var(--color-primario);
+    }
     
     .menu-hamburguesa>ul>li:hover{
         cursor: pointer;
@@ -178,7 +188,7 @@ header{
     padding: 100px 40px 0px 40px;
     display: flex;
     flex-direction: column;
-    justify-content: space-evenly;
+    justify-content: space-around;
 }
 
     .container-mision-vision{
@@ -274,10 +284,6 @@ header{
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: space-between;
-}
-#seccion-contacto>p{
-    text-align: center;
 }
     #form-contacto{
         width: 100%;
@@ -391,7 +397,7 @@ footer{
 
     #seccion-mision-vision{
         padding: 80px 10px 0px 10px;
-        justify-content: space-evenly;
+        justify-content: start;
     }
 
     .container-mision-vision{
@@ -413,22 +419,22 @@ footer{
 
         .imagen1{
             width: 49%;
-            height: 100px;
+            height: 65px;
             background-color: green;
         }
         .imagen2{
             width: 49%;
-            height: 100px;
+            height: 65px;
             background-color: green;
         }
         .imagen3{
             width: 100%;
-            height: 110px;
+            height: 80px;
             background-color: aqua;
         }
 
     #seccion-servicios{
-        padding: 100px 10px 100px 10px;
+        padding: 100px 30px 100px 30px;
     }
     #seccion-servicios>h2, #seccion-servicios>p{
         text-align: center;
@@ -443,9 +449,13 @@ footer{
             }
     #seccion-contacto{
         padding: 100px 10px 100px 10px;
+        justify-content: space-between;
     }
+        #seccion-contacto>p{
+            text-align: center;
+        }
         #form-contacto{
-            padding: 5px;
+            padding: 6px 5px;
         }
         #form-contacto>fieldset{
             width: 100%;
